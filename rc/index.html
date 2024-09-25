@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC: Rapid Copy - Velocidad extrema en copia de archivos</title>
+    <style>
+        :root {
+            --bg-color: #0a0e17;
+            --text-color: #b8c5d9;
+            --accent-color: #4a9df8;
+            --secondary-color: #1e2837;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: linear-gradient(45deg, #4a9df8, #1e5799);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-style: italic;
+        }
+        .feature-box {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .code-block {
+            background-color: #1a1e24;
+            border-radius: 4px;
+            padding: 15px;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #3a7dc8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RC: Rapid Copy</h1>
+        <p class="tagline">Copia de archivos a la velocidad del rayo</p>
+    </header>
+    
+    <div class="container">
+        <div class="feature-box">
+            <h2>¿Qué es RC?</h2>
+            <p>RC es una herramienta de copia de archivos ultrarrápida diseñada para maximizar el rendimiento en sistemas modernos. Utilizando técnicas avanzadas de multiproceso y E/S asíncrona, RC lleva la copia de archivos al siguiente nivel.</p>
+        </div>
+        
+        <div class="feature-box">
+            <h2>Características clave</h2>
+            <ul>
+                <li>Velocidad extrema con multiprocesamiento adaptativo</li>
+                <li>Optimización inteligente según el hardware</li>
+                <li>Interfaz de línea de comandos potente y flexible</li>
+                <li>Manejo eficiente de errores y depuración avanzada</li>
+            </ul>
+        </div>
+        
+        <div class="feature-box">
+            <h2>Instalación rápida</h2>
+            <div class="code-block">
+                <code>cargo install --git https://github.com/GoldenHand-Dev/rc</code>
+            </div>
+        </div>
+        
+        <div class="feature-box">
+            <h2>Uso básico</h2>
+            <div class="code-block">
+                <code>rc [OPCIONES] ORIGEN DESTINO</code>
+            </div>
+            <p>Descubre todas las opciones con:</p>
+            <div class="code-block">
+                <code>rc --help</code>
+            </div>
+        </div>
+        
+        <div class="feature-box">
+            <h2>¿Por qué RC?</h2>
+            <p>RC nació de la necesidad de una herramienta de copia eficiente en Windows, superando las limitaciones de PowerShell en sistemas con recursos limitados. Ahora, RC ofrece un rendimiento excepcional en todas las plataformas.</p>
+        </div>
+        
+        <div class="feature-box">
+            <h2>Únete al proyecto</h2>
+            <p>RC es un proyecto de código abierto y tu contribución es bienvenida. Visita nuestro repositorio en GitHub para más información.</p>
+            <a href="https://github.com/GoldenHand-Dev/rc" class="btn">Ver en GitHub</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>RC: Rapid Copy - Licencia GNU GPL v3.0</p>
+            <p>Contacto: <a href="mailto:1nu55et1@gmail.com">1nu55et1@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
