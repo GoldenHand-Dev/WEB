@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Editor - Editor de texto moderno basado en terminal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+    <style>
+        :root {
+            --primary-color: #61afef;
+            --secondary-color: #282c34;
+            --background-color: #21252b;
+            --text-color: #abb2bf;
+        }
+
+        body {
+            font-family: 'Hack', monospace;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+
+        #inicio {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .community-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .community-button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        pre {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Hack', monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Core Editor</h1>
+            <p>Un editor de texto moderno, eficiente y extensible inspirado en editores basados en consola</p>
+            <a href="https://github.com/1Nu55et1/core-editor" class="cta-button">Ver en GitHub</a>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>Características principales</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Interfaz TUI</h3>
+                    <p>Interfaz de usuario basada en terminal para máxima eficiencia</p>
+                </div>
+                <div class="feature">
+                    <h3>Modos de edición</h3>
+                    <p>Inspirados en Vim: Normal, Inserción y Comando</p>
+                </div>
+                <div class="feature">
+                    <h3>Atajos de teclado intuitivos</h3>
+                    <p>Navegación y edición eficiente mediante atajos inspirados en Vim</p>
+                </div>
+                <div class="feature">
+                    <h3>Múltiples cursores</h3>
+                    <p>Edición simultánea en múltiples ubicaciones</p>
+                </div>
+                <div class="feature">
+                    <h3>Altamente personalizable</h3>
+                    <p>Adapta Core Editor a tu flujo de trabajo con futura compatibilidad para plugins y temas</p>
+                </div>
+                <div class="feature">
+                    <h3>Rendimiento excepcional</h3>
+                    <p>Desarrollado en Rust para una velocidad y eficiencia inigualables</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="desarrollo">
+            <h2>Contribuir al desarrollo</h2>
+            <p>Core Editor está en desarrollo activo y acepta contribuciones. Sigue estos pasos:</p>
+            <ol>
+                <li>Haz un fork del <a href="https://github.com/1Nu55et1/core-editor">repositorio</a></li>
+                <li>Crea una nueva rama para tu característica (<code>git checkout -b feature/nueva-caracteristica</code>)</li>
+                <li>Haz tus cambios y commitea (<code>git commit -am 'Añade nueva característica'</code>)</li>
+                <li>Haz push a tu rama (<code>git push origin feature/nueva-caracteristica</code>)</li>
+                <li>Crea un nuevo Pull Request</li>
+            </ol>
+        </section>
+
+        <section id="comunidad">
+            <h2>Únete a la comunidad</h2>
+            <p>Colabora, aprende y comparte con otros usuarios de Core Editor</p>
+            <div class="community-links">
+                <a href="https://github.com/1Nu55et1/core-editor" class="community-button">GitHub</a>
+                <a href="#" class="community-button">Discord</a>
+                <a href="#" class="community-button">Documentación</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Core Editor. Proyecto de código abierto.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animación suave para el desplazamiento de los enlaces de navegación
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Animación para las características
+            const features = document.querySelectorAll('.feature');
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            features.forEach(feature => {
+                feature.style.opacity = 0;
+                feature.style.transform = 'translateY(20px)';
+                feature.style.transition = 'opacity 0.5s, transform 0.5s';
+                observer.observe(feature);
+            });
+        });
+    </script>
+</body>
+</html>
